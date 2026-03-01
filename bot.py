@@ -7,8 +7,9 @@ from telegram.ext import (
     ContextTypes,
     ConversationHandler,
 )
+import os
 
-TOKEN = "8767668344:AAEj_iWWqBXjipd4RtaW46bUEA16GT4G5cI"
+TOKEN = os.getenv("8767668344:AAEj_iWWqBXjipd4RtaW46bUEA16GT4G5cI")
 ADMIN_ID = 6366420482  # Бул жерге өз ID'иңди жаз
 
 NICKNAME, FFID = range(2)
