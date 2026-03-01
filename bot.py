@@ -9,7 +9,7 @@ from telegram.ext import (
 )
 import os
 
-TOKEN = os.getenv("Free_fire_kg_bot")
+TOKEN = os.getenv("8767668344:AAFskwmau0N0LIzwQOuVZXlSeDJFR9koySI")
 ADMIN_ID = 6366420482  # Бул жерге өз ID'иңди жаз
 
 NICKNAME, FFID = range(2)
@@ -56,3 +56,16 @@ conv_handler = ConversationHandler(
 app.add_handler(conv_handler)
 
 app.run_polling()
+from flask import Flask
+import threading
+
+app_web = Flask(__name__)
+
+@app_web.route('/')
+def home():
+    return "Bot is running!"
+
+def run_web():
+    app_web.run(host="0.0.0.0", port=10000)
+
+threading.Thread(target=run_web).start()
