@@ -9,7 +9,7 @@ from telegram.ext import (
 )
 import os
 
-TOKEN = os.getenv("8767668344:AAEj_iWWqBXjipd4RtaW46bUEA16GT4G5cI")
+TOKEN = os.getenv("Free_fire_kg_bot")
 ADMIN_ID = 6366420482  # Бул жерге өз ID'иңди жаз
 
 NICKNAME, FFID = range(2)
